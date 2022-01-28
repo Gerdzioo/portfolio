@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio</title>
+
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/anime.css">
+    <script src="https://kit.fontawesome.com/7bcbc8de94.js" crossorigin="anonymous"></script>
+
+
+
+    <script src="js/main.js" async></script>
+
+</head>
+
+<body>
+    <header class="lineBottom">
+        <div class="logo">
+            <a href="index.html">
+                <p style="margin-top: 3%;">Jakub Gabriel</p>
+            </a>
+        </div>
+
+        <div class="RightPanel">
+            <div class="button" onclick="AboutMe()">
+                <p>O mnie</p>
+            </div>
+            <div class="button marginButton" onclick="Projects()">
+                <p>Projekty</p>
+            </div>
+            <div class="button" style="display: none;">
+                <p>Certyfikaty</p>
+            </div>
+
+        </div>
+    </header>
+    <main>
+        <!--nie widoczne-->
+        <div id="aboutme" style="display: none; overflow: auto;">
+            O mnie:<br>
+            <span style="font-size:20px; ">Programowaniem i pisaniem stron internetowych
+                zainteresowałem się juz w
+                podstawówce. To już wtedy zacząłem tworzyć swoje pierwsze "strony". Nie wyglądały one za dobrze więc
+                postanowiłem to zostawić. Ukończyłem zawodówkę na kierkunku kucharstwa. Dzisiaj mam 20 lat i
+                postanowiłem sie przebranżowić. Dużo spędzam przy komputerze ponieważ uwielbiam grać w gry.
+                Wykupiłem
+                kursy zacząłem o tym dużo czytać i ćwiczyć. Projekty które wykonywałem są zaczerpnięte ze strony
+                frontend mentory. Zacząłem równierz projekt zwizany z php. Jako iż jestem samoukiem pewnie moje
+                doświadczenie nie jest zdyt duże ale szuakm pracy w IT aby sie rozwijać i pokazać młodszym że zawsze
+                można jak bardzo się tego chce. Sam ucze sie na własnych błedach więc wiem że można jeśli tylko się
+                chcę.</span>
+        </div>
+        <div id="projects" style="display: none;">
+            Moje Projekty:<br>
+            <a href="https://84a2ce98.nft-8xz.pages.dev" target="_blank"><img class="ProjectWheel" src="images/praca1.png" alt="praca1.png"></a>
+            <a href="https://cards-etb.pages.dev" target="_blank"><img class="ProjectWheel" src="images/praca2.png" alt="praca2.png"></a>
+            <a href="https://qucode.pages.dev" target="_blank"><img class="ProjectWheel" src="images/praca3.png" alt="praca3.png"></a>
+            <div class="panelSocial">
+                <a href="https://github.com/Gerdzioo?tab=repositories" target="_blank"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/jakub-gabriel-082ba4227/" target="_blank"><i class="fab fa-linkedin socialMargin"></i> </a>
+                <a href="https://www.facebook.com/kuba.gabriel.7/" target="_blank"><i class="fab fa-facebook-messenger socialMargin"></i></div></a>
+        </div>
+
+        <!--widoczne-->
+        <div id="window">
+            <img class="foto" src="images/bgimg.png" width="100%" alt="bgimg.png">
+            <img onmouseenter="bigImg(this)" onmouseleave="normalImg(this)" class="profileIMG" src="images/foto.png"
+                width="100px" height="100px" alt="Profil">
+            <div class="text">
+                <h3>Jakub Gabriel</h3>
+            </div>
+            <div id="mySkill" class="smalltext"></div>
+            <div class="skillpanelhtml">
+                <img class="wheel" src="images/html.png" alt="html.png">
+                <div class="skillActiv"></div>
+                <div class="skillActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="smalltext">Junior</div>
+            </div>
+            <div class="skillpanelcss">
+                <img class="wheel" src="images/css.png" alt="css.png">
+                <div class="skillActiv"></div>
+                <div class="skillActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="smalltext">Junior</div>
+            </div>
+            <div class="skillpanelJS">
+                <img class="wheel" src="images/javascript.png" alt="javascript.png">
+                <div class="skillActiv"></div>
+                <div class="skillActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="smalltext">Junior</div>
+            </div>
+            <div class="skillpanelBoot">
+                <img class="wheel" src="images/bootstrap.png" alt="bootstrap.png">
+                <div class="skillActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="skillNoActiv"></div>
+                <div class="smalltext">Initial</div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>
